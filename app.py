@@ -79,7 +79,7 @@ def login():
                 return redirect(url_for('admin_dashboard'))
             return redirect(url_for('dashboard'))
         flash('Invalid credentials')
-    return render_template('login.html')
+    return render_template('index.html')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
